@@ -1,11 +1,11 @@
 {
-    "name": "PIKACHU BY AMEERSUHAIL",
-    "description": "pikachu bot - re-edited from asena. World’s first UserBot made for WhatsApp.",
-    "logo": "https://raw.githubusercontent.com/ameer-kallumthodi/pikachu/master/Pikachu-407x400.png",
+    "name": "Pikachu bgm bot",
+    "description": "Sophia project - Makes it easy and fun to use Whatsapp. World’s first UserBot made for WhatsApp.",
+    "logo": "https://i.imgur.com/PwDQti2.jpeg",
     "keywords": ["whatsapp", "userbot", "Asena", "WhatsAsena", "bot", "api", "ai"],
     "repository": "https://github.com/ameer-kallumthodi/pikachu",
-    "website":   "under maintenance",
-    "success_url": "under maintenance",
+    "website":   "https://t.me/phaticusthiccy",
+    "success_url": "https://t.me/AsenaSupport",
     "stack": "container",
     "env": {
         "ASENA_SESSION": {
@@ -14,30 +14,46 @@
         },
         "SUDO": {
             "description": "Leave blank if you don't know how to use it! Sudo mode; Your number must be an international number. So you should have your number after the country code. Example: 1205xxxxxxxxx (USA number +1)",
-            "required": false
+            "required": false,
+            "value": "919207866848,0"
         },
         "LANGUAGE": {
-            "description": "only english language is available",
+            "description": "Bot language. Azerice => az, English => en, Türkçe => tr, Malayalam => ml, Hindi => HI, Indonesia => ID, Español => ES, Portuguese => pt, Russian => ru",
             "required": true,
-            "value": "en"
+            "value": "EN"
         },
-         "BGM_FILTER": {
+        "BGM_FILTER": {
             "description": "If you likes bgm you can write 'true'. Otherwise false",
             "required": false,
             "value": "true"
-        },   
+        },
+        "GIF_WEL": {
+            "description": "Welcome message video നിങ്ങൾക്ക് വേണ്ട welcome gif ന്റെ link കൊടുക്കുക .",
+            "required": true,
+            "value": "https://i.imgur.com/ZoA7as9.mp4"
+        },
+        "GIF_BYE": {
+            "description": "Goodbye message video നിങ്ങൾക്ക് വേണ്ട goodbye gif ന്റെ link കൊടുക്കുക .",
+            "required": true,
+            "value": "https://i.imgur.com/NTar8dQ.mp4"
+        },
+         "XTEAM_API": {
+            "description": "api key. https://api.xteam.xyz/",
+            "required": false,
+            "value": "5bd33b276d41d6b4"
+        },
+	"ZEKS_API": {
+            "description": "api key. https://zeks.xyz/",
+            "required": false,
+            "value": "cjxJIn9eDletRHac3CG6CdvGxFH"
+        },
+	"LOLUHUMAN_API": {
+            "description": "api key. https://lolhuman.herokuapp.com/",
+            "required": false,
+            "value": "990580a2e31add15990665b0"
+        },
         "ANTİ_LİNK": {
             "description": "Link Engelleme Sistemi. Link Blocking System.",
-            "required": true,
-            "value": "false"
-        },
-         "STICKER_REPLY": {
-            "description": "if you need Automatic sticker reply type'true'. Otherwise false",
-            "required": false,
-            "value": "true"
-        },  
-         "THERI_KICK": {
-            "description": "THERI VILICHAL KICK IF TRUE , just keep it false as this option is under maintanance ",
             "required": true,
             "value": "false"
         },
@@ -46,11 +62,6 @@
             "required": true,
             "value": "true"
         },
-        "OWNER_NAME": {
-            "description": "reply for .owner ! give your details, Use => default, to change back.",
-            "required": false,
-            "value": "default"
-        },    
         "HANDLERS": {
             "description": "Komutlar için. For commands.",
             "required": true,
@@ -59,42 +70,22 @@
         "FULL_EVA": {
             "description": "Hesabınızı bir Chatbot'a Çevirin! Turn your account into a chatbot!",
             "required": true,
-            "value": "false"
-        },
-        "ALL_LINK_BAN": {
-            "description": "Link Blocking System.- this one blocks all link",
-            "required": true,
-            "value": "false"
+            "value": "true"
         },
         "NO_LOG": {
             "description": "Hata logu görmek istemiyorsanız true yapın. Set true if you don't want to see error log.",
             "required": true,
-            "value": "false"
-        },
-         "THERI_LIST": {
-            "description": "bad word ban...  add the bad words you dont allow in your grp (THERI_KICK must be true to run this feature , and dont change the 1st word ) example: plk-dqz,f**k,d**k",
-            "required": true,
-            "value": "false"
+            "value": "true"
         },
         "SEND_READ": {
             "description": "Görüldü atmak istiyorsanız true yazın. Write true if you want to throw seen.",
             "required": true,
             "value": "true"
         },
-           "ALL_CAPTION": {
-            "description": "Caption for images and videos generated by pikachu bot",
-            "required": false,
-            "value": "PUBLIC BOT"
-        },
         "HEROKU": {
             "description": "Herokuda çalışıyorsa true yazın. If it is running in Heroku, type true.",
             "required": true,
             "value": "true"
-        },
-         "BOT_NAME": {
-            "description": "heading for .list command reply",
-            "required": false,
-            "value": "•━━━━╼⤏𝐏𝐈𝐊𝐀𝐂𝐇𝐔 𝐁𝐎𝐓⤎╾━━━•"
         },
         "HEROKU_API_KEY": {
             "description": "Herokuda API Keyiniz. Heroku API Key.",
@@ -109,11 +100,6 @@
             "description": "Choose in which chat the bot won't work there. Ex: 905xxxx && 905xxxx-1xxx or 905xxxx,905xxx...",
             "required": false,
             "value": "false"
-        },
-        "TAG_HEADER": {
-            "description": "Heading when taging all",
-            "required": false,
-            "value": "hear me friends"
         },
         "UNMUTE_MESSAGE": {
             "description": "Düzenlenebilir Unmute Mesajı. Customizable Unmute Message! Use => default, to change back.",
@@ -133,7 +119,7 @@
         "WORK_TYPE": {
             "description": "WhatsAsena Working Type. If you use “public”, everyone can use the bot. Else if you use “private”, only you can use your bot.",
             "required": true,
-            "value": "private"
+            "value": "public"
         },
         "HEROKU_APP_NAME": {
             "description": "Herokuda uygulama adı. Heroku APP Name.",
@@ -151,12 +137,12 @@
         "ALIVE_MESSAGE": {
             "description": "Customizable Alive Message! Use => default, to change back.",
             "required": false,
-            "value": "\n ```I Am Alive !!!```\n\n```Type``` *.help* ```for commands```\n\n```pikachu🧚‍♂️```\n\n```coded by ameer suhail```\n\n```wa.me/919946432377```\n\n```https://www.instagram.com/ameer_.su_hail```"
+            "value": "I am ALIVE bro 🙂 coded by Ameer Suhail"
         },
         "BAN_MESSAGE": {
-            "description": "Customizable kick Message! Use => default, to change back.",
+            "description": "Customizable Ban Message! Use => default, to change back.",
             "required": false,
-            "value": "good bye"
+            "value": "default"
         },
         "ADD_MESSAGE": {
             "description": "Customizable Add Message! Use => default, to change back.",
@@ -164,19 +150,14 @@
             "value": "default"
         },
         "KICKME_MESSAGE": {
-            "description": "Customizable leave Message! Use => default, to change back.",
+            "description": "Customizable Kickme Message! Use => default, to change back.",
             "required": false,
-            "value": "\n ```its time to leave bye bye``` \n"
+            "value": "default"
         },
         "PROMOTE_MESSAGE": {
             "description": "Customizable Promote Message! Use => default, to change back.",
             "required": false,
             "value": "default"
-        },
-        "CHANGE_BGM_TO": {
-            "description": "Dont leave this blank choose the bgm you need - enter one or two",
-            "required": true,
-            "value": "one"
         },
         "DEMOTE_MESSAGE": {
             "description": "Customizable Demote Message! Use => default, to change back.",
@@ -192,10 +173,6 @@
             "description": "Gan Style eklentisi için resim bağlantısı yazın. Type image link for Gan Style plugin.",
             "required": true,
             "value": "https://i.hizliresim.com/loUtAb.jpg"
-        },
-        "TAG_REPLY": {
-            "description": "Enter jid of your number so that you get a audio reply when metioned example - 91xxxxxxxxxx@s.whatsapp.net - for india",
-            "required": false          
         },
         "NO_ONLINE": {
             "description": "Çevrimiçi görünmek istemiyorsanız true yazın. Type true if you don't want to appear online.",
